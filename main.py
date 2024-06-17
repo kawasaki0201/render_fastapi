@@ -34,15 +34,19 @@ def omikuji():
 
     return omikuji_list[random.randrange(10)]
 
+from fastapi.responses import HTMLResponse 
+
 @app.get("/index")
 def index():
     html_content = """
     <html>
         <head>
-            <title>Some HTML in here</title>
+            <title>こんにちは</title>
         </head>
         <body>
-            <h1>Look ma! HTML!</h1>
+            <h1>おはようございます。</h1>
+            <h2>こんばんは。</h2>
+            <h3>さようなら。</h3>
         </body>
     </html>
     """

@@ -54,4 +54,4 @@ def index():
 
 @app.post("/present")
 async def give_present(present):
-    return {"response": f"サーバです。メリークリスマス！ {present}ありがとう。お返しはキャンディーです。"}
+    return {"response": f"サーバです。ハッピーバレンタイン！ {present}ありがとう。お返しはクッキーです。"}
